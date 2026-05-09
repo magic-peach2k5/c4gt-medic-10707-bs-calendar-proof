@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "sourcePackage": "cht-core-mini/node_modules/bikram-sambat",
+  "sourcePaths": [
+    "webapp/src/js/enketo/widgets/bikram-sambat-datepicker.js",
+    "webapp/src/ts/modules/reports/reports-sidebar-filter.component.ts",
+    "webapp/src/ts/services/target-aggregates.service.ts",
+    "webapp/src/ts/services/calendar-interval.service.ts"
+  ],
+  "cases": [
+    {
+      "bs": "2080-12",
+      "days": 30,
+      "adStart": "2024-03-14",
+      "adEnd": "2024-04-12",
+      "reportsFilterExpected": {
+        "date": {
+          "from": "2024-03-14T00:00:00.000Z",
+          "to": "2024-04-12T23:59:59.999Z"
+        }
+      },
+      "targetAggregatesExpected": {
+        "reportingPeriod": "2080-12",
+        "intervalTag": "2080-BS-12",
+        "resetAt": "2024-03-14",
+        "closesAt": "2024-04-12"
+      }
+    },
+    {
+      "bs": "2081-01",
+      "days": 31,
+      "adStart": "2024-04-13",
+      "adEnd": "2024-05-13",
+      "reportsFilterExpected": {
+        "date": {
+          "from": "2024-04-13T00:00:00.000Z",
+          "to": "2024-05-13T23:59:59.999Z"
+        }
+      },
+      "targetAggregatesExpected": {
+        "reportingPeriod": "2081-01",
+        "intervalTag": "2081-BS-01",
+        "resetAt": "2024-04-13",
+        "closesAt": "2024-05-13"
+      }
+    },
+    {
+      "bs": "2081-02",
+      "days": 32,
+      "adStart": "2024-05-14",
+      "adEnd": "2024-06-14",
+      "reportsFilterExpected": {
+        "date": {
+          "from": "2024-05-14T00:00:00.000Z",
+          "to": "2024-06-14T23:59:59.999Z"
+        }
+      },
+      "targetAggregatesExpected": {
+        "reportingPeriod": "2081-02",
+        "intervalTag": "2081-BS-02",
+        "resetAt": "2024-05-14",
+        "closesAt": "2024-06-14"
+      }
+    },
+    {
+      "bs": "2081-03",
+      "days": 31,
+      "adStart": "2024-06-15",
+      "adEnd": "2024-07-15",
+      "reportsFilterExpected": {
+        "date": {
+          "from": "2024-06-15T00:00:00.000Z",
+          "to": "2024-07-15T23:59:59.999Z"
+        }
+      },
+      "targetAggregatesExpected": {
+        "reportingPeriod": "2081-03",
+        "intervalTag": "2081-BS-03",
+        "resetAt": "2024-06-15",
+        "closesAt": "2024-07-15"
+      }
+    }
+  ]
+}

@@ -1,24 +1,31 @@
-# Medic #10707 - BS Calendar
+# Medic #10707 - Bikram Sambat Calendar
 
-**C4GT 2026 Proof Repository**
-
-## Issue
-Breath study calendar with filters
+C4GT 2026 reviewer proof packet.
 
 ## What This Proof Shows
-React filter mockup - no real calendar data
 
-## What's Not Proven
-- No upstream PRs merged
-- No production deployment
-- No real user data
-- No backend integration
+- BS month-boundary edge proof and output JSON
+- BS/AD conversion table and report filter mock
+- source-grounded runtime conversion proof
+- date-flow, edge-case, and prototype screenshots
 
-## Files
-- `MIFI_PROTOTYPE/` - Interactive prototype
-- `screenshots/` - Visual evidence
-- `EVIDENCE/` - Additional proof artifacts
+## What This Proof Does Not Claim
 
----
+- no full CHT runtime fix
+- no merged upstream PR
+- no production deployment
 
-*This is a proof-of-concept for C4GT 2026 application. Not for production use.*
+## Files To Inspect
+
+- `proof_packet/bs-month-edge-proof.js`
+- `proof_packet/bs-month-edge-proof-output.json`
+- `proof_packet/bs-ad-conversion-table.md`
+- `proof_packet/screenshots/`
+
+## Next Upgrade
+
+Convert edge cases into failing CHT tests once Angular tooling is available.
+
+## Boundary
+
+This repo is application proof, not production code. Claims are limited to the artifacts listed above.
